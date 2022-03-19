@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 // Utils
 const { sequelize } = require('../util/database');
 
-const Actors = sequelize.define('actors', {
+const Actor = sequelize.define('actors', {
    id: {
       primaryKey: true,
       type: DataTypes.INTEGER,
@@ -36,4 +36,4 @@ const Actors = sequelize.define('actors', {
    }
 });
 
-module.exports = { Actors };
+module.exports = { Actor };
